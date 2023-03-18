@@ -1,5 +1,5 @@
 // import $ from 'jquery';
-import '../packs/modules/xxxx'
+import './modules/ququ'
 
 
 // This file is automatically compiled by Webpack, along with any other files
