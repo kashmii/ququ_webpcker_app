@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QuquWebpackerApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+  <div class="text-center">
+    <h1 class="pt-3">九九の計算</h1>
+    <!-- 計算を始めるボタン -->
+    <button class="btn-show mt-4">計算を始める</button>
+    <br>
+    <div class="calculator d-none mt-5">
+      <!-- 数字2つセレクトと×と=の記号 -->
+      <select name="num-1st">
+        <option value="">-</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      ×
+      <select name="num-2nd">
+        <option value="">-</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      =
+      <!-- 答えが表示されるスペース -->
+      <span class="answer"></span><br>
+      <!-- 計算を実行ボタン -->
+      <button class="do_cal mt-3">計算する</button>
+    </div>
+  </div>
+  </body>
+</html>
